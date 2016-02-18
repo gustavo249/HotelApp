@@ -87,9 +87,9 @@ public class Apartment {
             BufferedReader br = new BufferedReader(new FileReader("apartments.txt"));
             String line;
             String[] infoApartments;
-
+            line = br.readLine();
             while ((line = br.readLine()) != null) {
-                infoApartments = line.split(" ");
+                infoApartments = line.split("\\s+");
                 Apartment apartment = new Apartment(
                         Integer.parseInt(infoApartments[0]),
                         Integer.parseInt(infoApartments[1]),
