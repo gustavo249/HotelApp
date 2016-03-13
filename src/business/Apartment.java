@@ -1,6 +1,9 @@
+package business;
+
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Gustavo on 12/02/2016.
@@ -62,7 +65,7 @@ public class Apartment {
 
     @Override
     public String toString() {
-        return "Apartment{" +
+        return "business.Apartment{" +
                 "apartmentNo=" + apartmentNo +
                 ", rooms=" + rooms +
                 ", beds=" + beds +
@@ -71,38 +74,6 @@ public class Apartment {
                 '}';
     }
 
-    public static Apartment[] addNewApartment(Apartment[] oldApartments, Apartment apartment) {
-        Apartment[] newApartments = new Apartment[oldApartments.length + 1];
-        for (int i = 0;i < oldApartments.length; i++) {
-            newApartments[i] = oldApartments[i];
-        }
-        newApartments[oldApartments.length] = apartment;
-        return newApartments;
-    }
 
-    public static Apartment[] readApartments() {
-        Apartment[] allApartments = new Apartment[0];
-
-        try {
-            BufferedReader br = new BufferedReader(new FileReader("apartments.txt"));
-            String line;
-            String[] infoApartments;
-            line = br.readLine();
-            while ((line = br.readLine()) != null) {
-                infoApartments = line.split("\\s+");
-                Apartment apartment = new Apartment(
-                        Integer.parseInt(infoApartments[0]),
-                        Integer.parseInt(infoApartments[1]),
-                        Integer.parseInt(infoApartments[2]),
-                        infoApartments[3],
-                        Integer.parseInt(infoApartments[4])
-                );
-                allApartments = addNewApartment(allApartments, apartment);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return allApartments;
-    }
 }
 

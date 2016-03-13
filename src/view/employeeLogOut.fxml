@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="view.viewLogic.employeeLogOut" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="244.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="6.0" layoutY="14.0" prefHeight="18.0" prefWidth="141.0" text="Do you want to log out?" />
+      <Button fx:id="btnYes" layoutX="51.0" layoutY="53.0" mnemonicParsing="false" onAction="#backToMainScene" text="Yes" />
+      <Button fx:id="btnNo" layoutX="147.0" layoutY="53.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="No" />
+   </children>
+</AnchorPane>

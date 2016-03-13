@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ReservationsTable">
+   <center>
+      <TableView fx:id="reservationsTable" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colReservationNumber" prefWidth="139.0" text="Reservation number" />
+          <TableColumn fx:id="colApartmentNumber" minWidth="0.0" prefWidth="151.0" text="Apartment number" />
+            <TableColumn fx:id="colClientCnp" prefWidth="186.0" text="Client cnp" />
+            <TableColumn fx:id="colDate" prefWidth="173.0" text="Date" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#backToEmployeeWorkspace" prefWidth="650.0" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

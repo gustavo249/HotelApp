@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.EmployeeView">
+   <children>
+      <VBox layoutX="101.0" layoutY="74.0" prefHeight="230.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnNewReservation" mnemonicParsing="false" onAction="#newReservationView" text="New Reservation" />
+            <Button fx:id="btnCancelReservation" mnemonicParsing="false" onAction="#cancelReservationView" text="Cancel a Reservation" />
+            <Button fx:id="btnSeeReservations" mnemonicParsing="false" onAction="#seeAllReservations" text="See all Reservations" />
+         </children>
+      </VBox>
+      <VBox layoutX="300.0" layoutY="74.0" prefHeight="230.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnAddApartment" mnemonicParsing="false" onAction="#addApartmentView" text="Add new Apartment" />
+            <Button fx:id="btnRemoveApartments" mnemonicParsing="false" text="Remove an Apartment" />
+            <Button fx:id="btnSeeApartments" mnemonicParsing="false" text="See all apartments" />
+            <Button fx:id="btnSeeClients" mnemonicParsing="false" text="See all clients" />
+         </children>
+      </VBox>
+      <Button fx:id="btnLogOut" layoutX="579.0" layoutY="14.0" mnemonicParsing="false" onAction="#employeeLogOut" text="Log out" />
+      <Label fx:id="lbAcc" layoutX="400.0" layoutY="18.0" text="Signed in as" />
+   </children>
+</AnchorPane>

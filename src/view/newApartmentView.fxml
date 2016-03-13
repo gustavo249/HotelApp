@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ApartmentView">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="162.0" layoutY="98.0" prefHeight="160.0" prefWidth="140.0" spacing="29.0">
+         <children>
+            <Label text="Apartment Number :" />
+            <Label text="Rooms :" />
+            <Label text="Beds :" />
+            <Label layoutX="10.0" layoutY="61.0" text="Price per night :" />
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="300.0" layoutY="93.0" prefHeight="160.0" prefWidth="140.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtApNumber" promptText="apNumber" />
+            <TextField fx:id="txtRooms" layoutX="10.0" layoutY="10.0" promptText="number of rooms" />
+            <TextField fx:id="txtBeds" layoutX="10.0" layoutY="35.0" promptText="number of beds" />
+            <TextField fx:id="txtPrice" layoutX="10.0" layoutY="60.0" promptText="price" />
+         </children>
+      </VBox>
+      <Button fx:id="btnCancel" layoutX="232.0" layoutY="336.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Back" />
+      <Button fx:id="btnOk" layoutX="354.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewApartment" text="Ok" />
+   </children>
+</AnchorPane>

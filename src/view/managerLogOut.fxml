@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="244.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ManagerView">
+   <top>
+      <Label alignment="TOP_LEFT" text="Do you want to log out?" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="223.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnYes" mnemonicParsing="false" onAction="#backToMainScene" text="Yes" />
+            <Button fx:id="btnNo" alignment="CENTER" mnemonicParsing="false" onAction="#closeWindow" text="No" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

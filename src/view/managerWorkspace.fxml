@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ManagerView">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAddEmployee" mnemonicParsing="false" onAction="#addEmployeeView" prefHeight="52.0" prefWidth="115.0" text="Add Employee" />
+            <Button fx:id="btnSeeAllEmployees" mnemonicParsing="false" onAction="#seeEmployeesView" prefHeight="52.0" prefWidth="115.0" text="See all employees" />
+            <Button fx:id="btnFireEmployee" mnemonicParsing="false" onAction="#fireEmployeeView" prefHeight="52.0" prefWidth="115.0" text="Fire an employee" />
+            <Button fx:id="btnManagerLogOut" mnemonicParsing="false" onAction="#managerLogOut" prefHeight="21.0" prefWidth="80.0" text="Log out" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

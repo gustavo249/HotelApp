@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ReservationView">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="89.0" layoutY="48.0" prefHeight="230.0" prefWidth="210.0" spacing="21.0">
+         <children>
+            <Label text="Reservation Number" />
+            <Label text="Client's name" />
+            <Label text="Client's cnp" />
+            <Label text="Client's phone" />
+            <Label text="Apartment Number" />
+            <Label text="Date" />
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="300.0" layoutY="48.0" prefHeight="230.0" prefWidth="210.0" spacing="12.0">
+         <children>
+            <TextField fx:id="txtReservationNumber" promptText="reservation number" />
+            <TextField fx:id="txtClientName" layoutX="10.0" layoutY="10.0" promptText="client's name" />
+            <TextField fx:id="txtClientCnp" layoutX="10.0" layoutY="35.0" promptText="cnp" />
+            <TextField fx:id="txtClientPhone" layoutX="10.0" layoutY="10.0" promptText="phone" />
+            <TextField fx:id="txtApNumber" layoutX="10.0" layoutY="10.0" promptText="apNumber" />
+            <TextField fx:id="txtDate" layoutX="10.0" layoutY="10.0" promptText="date" />
+         </children>
+      </VBox>
+      <Button layoutX="379.0" layoutY="287.0" mnemonicParsing="false" onAction="#createNewReservation" text="Ok" />
+      <Button fx:id="btnCancel" layoutX="248.0" layoutY="287.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Back" />
+   </children>
+</AnchorPane>

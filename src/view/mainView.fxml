@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.View">
+   <center>
+      <VBox alignment="CENTER" prefHeight="367.0" prefWidth="661.0" spacing="30.0" style="-fx-background-color: #2e8b57;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginView" prefHeight="62.0" prefWidth="108.0" style="-fx-background-color: #c22222;" text="Login" textAlignment="CENTER" wrapText="true">
+               <effect>
+                  <DropShadow color="#268094" />
+               </effect>
+               <font>
+                  <Font name="Bauhaus 93" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExit1" mnemonicParsing="false" onAction="#closeProgram" prefHeight="62.0" prefWidth="108.0" style="-fx-background-color: #c22222;" text="Exit" wrapText="true">
+               <effect>
+                  <DropShadow color="#268094" />
+               </effect>
+               <font>
+                  <Font name="Bauhaus 93" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="45.0" prefWidth="644.0" style="-fx-background-color: #339999;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lbTitle" alignment="CENTER" depthTest="DISABLE" prefHeight="50.0" prefWidth="673.0" style="-fx-background-color: #339999;" text="Welcome to the Hotel!" textAlignment="CENTER" textFill="#680808" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold Italic" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
