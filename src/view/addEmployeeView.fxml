@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-image: url(http://p1.pichost.me/i/37/1606092.jpg);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Controller">
    <children>
       <VBox layoutX="218.0" layoutY="55.0" prefHeight="180.0" prefWidth="150.0" spacing="10.0">
          <children>
@@ -18,14 +18,14 @@
       </VBox>
       <VBox layoutX="75.0" layoutY="55.0" prefHeight="180.0" prefWidth="150.0" spacing="5.0">
          <children>
-            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="29.0" prefWidth="118.0" text="Name" />
-            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Job" />
-            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Salary" />
-            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Username" />
-            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Password" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="29.0" prefWidth="118.0" text="Name" textFill="RED" />
+            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Job" textFill="RED" />
+            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Salary" textFill="RED" />
+            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Username" textFill="RED" />
+            <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="118.0" text="Password" textFill="RED" />
          </children>
       </VBox>
-      <Button fx:id="btnAddNewEmployee" layoutX="150.0" layoutY="243.0" mnemonicParsing="false" onAction="#addEmployee" text="Ok" />
-      <Button fx:id="btnCancel" layoutX="241.0" layoutY="243.0" mnemonicParsing="false" onAction="#backToManagerWorkplace" text="Cancel" />
+      <Button fx:id="btnAddNewEmployee" layoutX="186.0" layoutY="256.0" mnemonicParsing="false" onAction="#addEmployee" text="Ok" />
+      <Button fx:id="btnCancel" layoutX="316.0" layoutY="256.0" mnemonicParsing="false" onAction="#backToManagerWorkplace" text="Cancel" />
    </children>
 </AnchorPane>

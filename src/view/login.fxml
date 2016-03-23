@@ -6,18 +6,15 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.LoginView">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-image: url(http://www.libertyhotelslara.com/dosyalar/resimler/liberty-hotels-lara-pools1.jpg);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.LoginView">
    <children>
-      <TextField fx:id="txtUsername" layoutX="163.0" layoutY="61.0" promptText="Username">
+      <TextField fx:id="txtUsername" layoutX="251.0" layoutY="56.0" promptText="Username">
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </TextField>
-      <PasswordField fx:id="pwdPassword" layoutX="163.0" layoutY="100.0" promptText="Password" />
-      <Button fx:id="btnManagerLogin" layoutX="102.0" layoutY="155.0" mnemonicParsing="false" onAction="#accesManager" prefHeight="25.0" prefWidth="123.0" text="Login as a manager" textAlignment="CENTER" wrapText="true" />
-      <Button fx:id="btnEmployeeLogin" layoutX="246.0" layoutY="155.0" mnemonicParsing="false" onAction="#accessEmployee" text="Login as an employee" />
+      <Button fx:id="btnEmployeeLogin" layoutX="334.0" layoutY="146.0" mnemonicParsing="false" onAction="#accessEmployee" text="Login as an employee" />
+      <Button fx:id="btnManagerLogin" layoutX="190.0" layoutY="146.0" mnemonicParsing="false" onAction="#accesManager" prefHeight="25.0" prefWidth="123.0" text="Login as a manager" textAlignment="CENTER" wrapText="true" />
+      <PasswordField fx:id="pwdPassword" layoutX="251.0" layoutY="99.0" promptText="Password" />
    </children>
-   <opaqueInsets>
-      <Insets />
-   </opaqueInsets>
 </AnchorPane>

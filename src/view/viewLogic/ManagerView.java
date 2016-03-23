@@ -30,13 +30,13 @@ public class ManagerView extends View {
 
     @FXML
     public void addEmployeeView() {
-        changeScene("../../view/addEmployeeView.fxml", 435, 300);
+        changeScene("../../view/addEmployeeView.fxml");
     }
 
 
     @FXML
     public void fireEmployeeView() {
-        changeScene("../../view/fireEmployeeView.fxml", 360, 160);
+        changeScene("../../view/fireEmployeeView.fxml");
     }
 
     @FXML

@@ -39,7 +39,7 @@ public class Controller {
     }
 
     public void start() {
-        hotel.setHotelName("hotel Crisan");
+        hotel.setHotelName("hotel Palermo");
         //Manager manager = new Manager("rcrisan", "pitech", "Crisan Raoul", 10000);
         // dataManager.insertNewManager(manager);
         stage = Main.myStage;
@@ -61,7 +61,7 @@ public class Controller {
 
     public boolean validateEmployee(String username, String password) {
         InterogateDatabase question = new InterogateDatabase();
-        if (!question.checkInDatabase(username, password, "employee")) {
+        if (question.checkInDatabase(username, password, "employee")) {
             //open employee workspace scene
             LoginView loginView = new LoginView();
             loginView.employeeWorkspaceView();

@@ -35,12 +35,12 @@ public class View implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        lbTitle.setText("Bine ai venit la " + Hotel.getHotelName());
+        lbTitle.setText("Welcome to " + Hotel.getHotelName());
     }
 
     @FXML
     public void loginView() {
-        changeScene("../../view/login.fxml", 470, 285);
+        changeScene("../../view/login.fxml");
     }
 
     public void changeScene(String scenePath, int width, int height) {
