@@ -1,10 +1,18 @@
 package view.viewLogic;
 
+import business.Client;
 import business.Reservation;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.util.Callback;
+import model.DataManager;
 
+import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.List;
 import java.util.Optional;
@@ -13,42 +21,49 @@ import java.util.ResourceBundle;
 /**
  * Created by Gustavo on 08/03/2016.
  */
-public class ReservationsTable extends View {
+public class ReservationsTable implements Initializable {
 
     private List<Reservation> reservations;
+    private static DataManager dataManager = new DataManager();
+    private static View view = new View();
 
     @FXML
-    private javafx.scene.control.TableView<Reservation> reservationsTable;
+    private javafx.scene.control.TableView reservationsTable;
     @FXML
     private TableColumn<Reservation, Integer> colReservationNumber;
     @FXML
     private TableColumn<Reservation, Integer> colApartmentNumber;
     @FXML
-    private TableColumn<Reservation, Integer> colClientCnp;
+    private TableColumn<Client, Integer> colClientCnp;
     @FXML
     private TableColumn<Reservation, String> colDate;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         colReservationNumber.setCellValueFactory(
-                new PropertyValueFactory<>("Reservation number")
+                new PropertyValueFactory<>("reservationNumber")
         );
         colApartmentNumber.setCellValueFactory(
-                new PropertyValueFactory<>("Apartment number")
+                new PropertyValueFactory<>("apartmentNo")
         );
         colClientCnp.setCellValueFactory(
-                new PropertyValueFactory<>("Client cnp")
+                new PropertyValueFactory<>("client")
         );
         colDate.setCellValueFactory(
                 new PropertyValueFactory<>("Date")
         );
         reservations = dataManager.retrieve(reservations, "reservations");
-        System.out.println(reservations.toString()); // here all seems alright all the fields are printed ok..
-        reservationsTable.getItems().setAll(reservations);
+        try {
+            System.out.println(reservations.toString()); // here all seems alright all the fields are printed ok..
+            reservationsTable.getItems().setAll(reservations);
+
+        } catch (NullPointerException e) {
+            System.err.println("No reservations to be listed");
+        }
+
     }
 
-    @Override
     public void backToEmployeeWorkspace() {
-        super.backToEmployeeWorkspace();
+        view.backToEmployeeWorkspace();
     }
 }

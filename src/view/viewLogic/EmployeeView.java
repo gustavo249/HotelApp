@@ -39,6 +39,21 @@ public class EmployeeView extends View {
     }
 
     @FXML
+    public void removeApartmentView() {
+        changeScene("../../view/removeApartment.fxml");
+    }
+
+    @FXML
+    public void seeAllApartments() {
+        changeScene("../../view/seeAllApartments.fxml");
+    }
+
+    @FXML
+    public void seeAllClients() {
+        changeScene("../../view/seeAllClients.fxml");
+    }
+
+    @FXML
     public void cancelReservationView() {
         changeScene("../../view/cancelReservationView.fxml");
     }

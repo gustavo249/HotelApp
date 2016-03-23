@@ -10,7 +10,7 @@
         <columns>
           <TableColumn fx:id="colReservationNumber" prefWidth="139.0" text="Reservation number" />
           <TableColumn fx:id="colApartmentNumber" minWidth="0.0" prefWidth="151.0" text="Apartment number" />
-            <TableColumn fx:id="colClientCnp" prefWidth="186.0" text="Client cnp" />
+            <TableColumn fx:id="colClientCnp" prefWidth="186.0" text="Client details (cnp, name)" />
             <TableColumn fx:id="colDate" prefWidth="173.0" text="Date" />
         </columns>
       </TableView>

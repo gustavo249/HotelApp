@@ -42,23 +42,8 @@ public class Client {
         this.phone = phone;
     }
 
-    public static void addNewClient(List<Client> clients) {
-        JTextField name = new JTextField("Name");
-        JTextField cnp = new JTextField("Cnp");
-        JPanel panel = new JPanel(new GridLayout(0, 1));
-        panel.add(new JLabel("Name"));
-        panel.add(name);
-        panel.add(new JLabel("Cnp"));
-        panel.add(cnp);
-        clients.add(new Client(name.getText(), Integer.parseInt(cnp.getText()), "0241"));
-    }
-
     @Override
     public String toString() {
-        return "business.Client{" +
-                "name='" + name + '\'' +
-                ", cnp='" + cnp + '\'' +
-                ", phone='" + phone + '\'' +
-                '}';
+        return String.valueOf(cnp) + "\n" + name;
     }
 }

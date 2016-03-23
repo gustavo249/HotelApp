@@ -16,9 +16,9 @@
       <VBox layoutX="300.0" layoutY="74.0" prefHeight="230.0" prefWidth="200.0" spacing="20.0">
          <children>
             <Button fx:id="btnAddApartment" mnemonicParsing="false" onAction="#addApartmentView" text="Add new Apartment" />
-            <Button fx:id="btnRemoveApartments" mnemonicParsing="false" text="Remove an Apartment" />
-            <Button fx:id="btnSeeApartments" mnemonicParsing="false" text="See all apartments" />
-            <Button fx:id="btnSeeClients" mnemonicParsing="false" text="See all clients" />
+            <Button fx:id="btnRemoveApartments" mnemonicParsing="false" onAction="#removeApartmentView" text="Remove an Apartment" />
+            <Button fx:id="btnSeeApartments" mnemonicParsing="false" onAction="#seeAllApartments" text="See all apartments" />
+            <Button fx:id="btnSeeClients" mnemonicParsing="false" onAction="#seeAllClients" text="See all clients" />
          </children>
       </VBox>
       <Button fx:id="btnLogOut" layoutX="579.0" layoutY="14.0" mnemonicParsing="false" onAction="#employeeLogOut" text="Log out" />

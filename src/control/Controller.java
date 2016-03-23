@@ -153,7 +153,7 @@ public class Controller {
                 System.err.println("The reservation matches with another reservation");
                 return;
             } else if (dataManager.find(clientCnp, "clients") != null) {
-                System.err.println("This client already exists in the system");
+                System.err.println("This client's cnp matches with another cnp in the system'");
                 return;
 
             } else {
@@ -200,6 +200,25 @@ public class Controller {
                 System.out.println(reservation.toString());
             } else {
                 System.err.println("Reservation does not exist");
+            }
+        } catch (Exception e) {
+            System.err.println("Invalid input");
+        }
+    }
+
+    public void removeApartment(String apNumber) {
+        try {
+            int apNo = Integer.parseInt(apNumber);
+            Apartment apartment = (Apartment) dataManager.find(apNo, "apartments");
+            if (apartment == null) {
+                System.err.println("Apartment not found");
+                return;
+            }
+            if (apartment.getStatus().startsWith("res"))
+                System.out.println("You cannot remove a reserved apartment");
+            else {
+                dataManager.remove(apNo, "apartments");
+                view.backToEmployeeWorkspace();
             }
         } catch (Exception e) {
             System.err.println("Invalid input");

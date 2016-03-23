@@ -52,7 +52,12 @@ public class EmployeesTable implements Initializable {
                 new PropertyValueFactory<>("Password")
         );
         employees = dataManager.retrieve(employees, "employees");
-        employeesTable.getItems().setAll(employees);
+        try {
+            employeesTable.getItems().setAll(employees);
+        } catch (NullPointerException e) {
+            System.err.println("No employees to be listed");
+        }
+
     }
 
     @FXML
