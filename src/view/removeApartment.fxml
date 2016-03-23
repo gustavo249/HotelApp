@@ -4,20 +4,19 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane fx:controller="view.viewLogic.RemoveApartmentView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTwSPtL6nWPTkO7Wkw5B45ENiVKU23Yn19gppOSi-mDHPfjsv); -fx-background-size: 650 400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.RemoveApartmentView">
    <children>
-      <VBox layoutX="69.0" layoutY="66.0" prefHeight="74.0" prefWidth="102.0">
+      <VBox layoutX="223.0" layoutY="165.0" prefHeight="74.0" prefWidth="102.0">
          <children>
             <Label text="Ap. Number to be removed" wrapText="true" />
          </children>
       </VBox>
-      <VBox layoutX="171.0" layoutY="62.0" prefHeight="74.0" prefWidth="102.0">
+      <VBox layoutX="325.0" layoutY="163.0" prefHeight="74.0" prefWidth="102.0">
          <children>
             <TextField fx:id="txtApNumber" promptText="ap. number" />
          </children>
       </VBox>
-      <Button layoutX="196.0" layoutY="140.0" mnemonicParsing="false" onAction="#removeApartment" text="Ok" />
-      <Button layoutX="94.0" layoutY="140.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Cancel" />
+      <Button layoutX="344.0" layoutY="237.0" mnemonicParsing="false" onAction="#removeApartment" text="Ok" />
+      <Button layoutX="248.0" layoutY="237.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Cancel" />
    </children>
 </AnchorPane>

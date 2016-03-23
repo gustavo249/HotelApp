@@ -6,7 +6,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ApartmentsTable">
    <center>
-      <TableView fx:id="apartmentsTable" BorderPane.alignment="CENTER">
+      <TableView fx:id="apartmentsTable" style="-fx-background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe7KH2N6pCCGe1S0E0qsQP0lFcZTW9MCvcNJ_pHX-smokGgCRe); -fx-background-size: 650 400;" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="colApNo" prefWidth="106.0" text="Ap.No" />
           <TableColumn fx:id="colRooms" prefWidth="90.0" text="Rooms" />

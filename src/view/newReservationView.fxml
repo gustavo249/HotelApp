@@ -5,22 +5,22 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ReservationView">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-image: url(http://thekarinachroniclesblog.com/wp-content/uploads/2016/01/sunset-plane.png); -fx-background-size: 650 400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ReservationView">
    <children>
-      <VBox alignment="TOP_RIGHT" layoutX="89.0" layoutY="48.0" prefHeight="230.0" prefWidth="210.0" spacing="21.0">
+      <VBox alignment="TOP_RIGHT" layoutX="184.0" layoutY="48.0" prefHeight="230.0" prefWidth="210.0" spacing="21.0">
          <children>
-            <Label text="Reservation Number" />
-            <Label text="Client's name" />
-            <Label text="Client's cnp" />
-            <Label text="Client's phone" />
-            <Label text="Apartment Number" />
-            <Label text="Date" />
+            <Label style="-fx-background-color: #c52020;" text="Reservation Number" textFill="WHITE" />
+            <Label style="-fx-background-color: #c52020;" text="Client's name" textFill="WHITE" />
+            <Label style="-fx-background-color: #c52020;" text="Client's cnp" textFill="WHITE" />
+            <Label style="-fx-background-color: #c52020;" text="Client's phone" textFill="WHITE" />
+            <Label style="-fx-background-color: #c52020;" text="Apartment Number" textFill="WHITE" />
+            <Label style="-fx-background-color: #c52020;" text="Date" textFill="WHITE" />
          </children>
          <padding>
             <Insets right="10.0" />
          </padding>
       </VBox>
-      <VBox layoutX="300.0" layoutY="48.0" prefHeight="230.0" prefWidth="210.0" spacing="12.0">
+      <VBox layoutX="395.0" layoutY="48.0" prefHeight="230.0" prefWidth="210.0" spacing="12.0">
          <children>
             <TextField fx:id="txtReservationNumber" promptText="reservation number" />
             <TextField fx:id="txtClientName" layoutX="10.0" layoutY="10.0" promptText="client's name" />
@@ -30,7 +30,7 @@
             <TextField fx:id="txtDate" layoutX="10.0" layoutY="10.0" promptText="date" />
          </children>
       </VBox>
-      <Button layoutX="379.0" layoutY="287.0" mnemonicParsing="false" onAction="#createNewReservation" text="Ok" />
-      <Button fx:id="btnCancel" layoutX="248.0" layoutY="287.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Back" />
+      <Button layoutX="573.0" layoutY="287.0" mnemonicParsing="false" onAction="#createNewReservation" style="-fx-background-color: #c52020;" text="Ok" textFill="WHITE" />
+      <Button fx:id="btnCancel" layoutX="395.0" layoutY="287.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" style="-fx-background-color: #c52020;" text="Back" textFill="WHITE" />
    </children>
 </AnchorPane>

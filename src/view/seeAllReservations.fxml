@@ -6,7 +6,7 @@
 
 <BorderPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ReservationsTable">
    <center>
-      <TableView fx:id="reservationsTable" BorderPane.alignment="CENTER">
+      <TableView fx:id="reservationsTable" style="-fx-background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe7KH2N6pCCGe1S0E0qsQP0lFcZTW9MCvcNJ_pHX-smokGgCRe); -fx-background-size: 650 400;" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="colReservationNumber" prefWidth="139.0" text="Reservation number" />
           <TableColumn fx:id="colApartmentNumber" minWidth="0.0" prefWidth="151.0" text="Apartment number" />

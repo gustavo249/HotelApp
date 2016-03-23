@@ -5,14 +5,14 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ApartmentView">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-image: url(http://www.wegoplaces.me/wp-content/uploads/2015/01/Sea-bedroom-tray.jpg); -fx-background-size: 650 400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ApartmentView">
    <children>
       <VBox alignment="TOP_RIGHT" layoutX="162.0" layoutY="98.0" prefHeight="160.0" prefWidth="140.0" spacing="29.0">
          <children>
-            <Label text="Apartment Number :" />
-            <Label text="Rooms :" />
-            <Label text="Beds :" />
-            <Label layoutX="10.0" layoutY="61.0" text="Price per night :" />
+            <Label style="-fx-background-color: #931818;" text="Apartment Number :" textFill="WHITE" />
+            <Label style="-fx-background-color: #931818;" text="Rooms :" textFill="WHITE" />
+            <Label style="-fx-background-color: #931818;" text="Beds :" textFill="WHITE" />
+            <Label layoutX="10.0" layoutY="61.0" style="-fx-background-color: #931818;" text="Price per night :" textFill="WHITE" />
          </children>
          <padding>
             <Insets right="10.0" />
@@ -26,7 +26,7 @@
             <TextField fx:id="txtPrice" layoutX="10.0" layoutY="60.0" promptText="price" />
          </children>
       </VBox>
-      <Button fx:id="btnCancel" layoutX="232.0" layoutY="336.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Back" />
-      <Button fx:id="btnOk" layoutX="354.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewApartment" text="Ok" />
+      <Button fx:id="btnCancel" layoutX="191.0" layoutY="336.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" style="-fx-background-color: #1e6a93;" text="Back" textFill="WHITE" />
+      <Button fx:id="btnOk" layoutX="424.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewApartment" style="-fx-background-color: #1e6a93;" text="Ok" textFill="WHITE" />
    </children>
 </AnchorPane>
