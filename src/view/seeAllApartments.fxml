@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewLogic.ApartmentsTable">
+   <center>
+      <TableView fx:id="apartmentsTable" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colApNo" prefWidth="106.0" text="Ap.No" />
+          <TableColumn fx:id="colRooms" prefWidth="90.0" text="Rooms" />
+            <TableColumn fx:id="colBeds" prefWidth="104.0" text="Beds" />
+            <TableColumn fx:id="colStatus" prefWidth="148.0" text="Status" />
+            <TableColumn fx:id="colPrice" prefWidth="151.0" text="Price" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Button minWidth="600.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

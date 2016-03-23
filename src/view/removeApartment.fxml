@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="view.viewLogic.RemoveApartmentView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="69.0" layoutY="66.0" prefHeight="74.0" prefWidth="102.0">
+         <children>
+            <Label text="Ap. Number to be removed" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox layoutX="171.0" layoutY="62.0" prefHeight="74.0" prefWidth="102.0">
+         <children>
+            <TextField fx:id="txtApNumber" promptText="ap. number" />
+         </children>
+      </VBox>
+      <Button layoutX="196.0" layoutY="140.0" mnemonicParsing="false" onAction="#removeApartment" text="Ok" />
+      <Button layoutX="94.0" layoutY="140.0" mnemonicParsing="false" onAction="#backToEmployeeWorkspace" text="Cancel" />
+   </children>
+</AnchorPane>
