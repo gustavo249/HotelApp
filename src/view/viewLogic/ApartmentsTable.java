@@ -40,7 +40,6 @@ public class ApartmentsTable extends View {
         colPrice.setCellValueFactory(new PropertyValueFactory<>("Price"));
         apartments = dataManager.retrieve(apartments, "apartments");
         try {
-            System.out.println(apartments.toString());
             apartmentsTable.getItems().addAll(apartments);
         } catch (NullPointerException e) {
             System.err.println("No apartments to be listed");

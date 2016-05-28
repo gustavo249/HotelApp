@@ -130,7 +130,7 @@ public class Controller {
                                      String clientPhone, String txtApNumber, String date) {
         try {
             Integer reservationNumber = Integer.parseInt(txtReservationNumber);
-            Integer clientCnp = Integer.parseInt(txtClientCnp);
+            int  clientCnp = Integer.parseInt(txtClientCnp);
             Integer apNumber = Integer.parseInt(txtApNumber);
 
             if (clientName == null || clientPhone == null || date == null) {
@@ -160,6 +160,9 @@ public class Controller {
                 dataManager.insert(client);
                 dataManager.insert(reservation);
                 dataManager.update(apNumber, "apartments", "reserved");
+
+                String operation = "New reservation created: " + reservation;
+                ActivityTracker.addActivity(operation);
                 view.backToEmployeeWorkspace();
             }
 
@@ -179,6 +182,8 @@ public class Controller {
             if (dataManager.find(apNumber, "apartments") == null) {
                 Apartment apartment = new Apartment(apNumber, rooms, beds, "available", price);
                 dataManager.insert(apartment);
+
+                ActivityTracker.addActivity("New apartment created: " + apartment);
                 view.backToEmployeeWorkspace();
             } else {
                 System.err.println("The apartment already exist in the system");
@@ -197,7 +202,8 @@ public class Controller {
                 dataManager.remove(reservation.getClient().getCnp(), "clients");
                 view.backToEmployeeWorkspace();
                 dataManager.update(reservation.getApartmentNo(), "apartments", "available");
-                System.out.println(reservation.toString());
+
+                ActivityTracker.addActivity("Reservation canceled: " + reservation);
             } else {
                 System.err.println("Reservation does not exist");
             }
@@ -218,6 +224,8 @@ public class Controller {
                 System.out.println("You cannot remove a reserved apartment");
             else {
                 dataManager.remove(apNo, "apartments");
+
+                ActivityTracker.addActivity("Apartment removed: " + apartment);
                 view.backToEmployeeWorkspace();
             }
         } catch (Exception e) {

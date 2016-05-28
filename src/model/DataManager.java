@@ -75,7 +75,7 @@ public class DataManager {
         ) {
             statement.setInt(1, bean.getReservationNumber());
             statement.setInt(2, bean.getApartmentNo());
-            statement.setInt(3, bean.getClient().getCnp());
+            statement.setLong(3, bean.getClient().getCnp());
             statement.setString(4, bean.getDate());
             int affected = statement.executeUpdate();
             if (affected > 0) {

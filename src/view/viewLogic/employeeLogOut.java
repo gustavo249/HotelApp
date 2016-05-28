@@ -1,5 +1,6 @@
 package view.viewLogic;
 
+import control.ActivityTracker;
 import javafx.fxml.FXML;
 
 import java.net.URL;
@@ -17,6 +18,7 @@ public class employeeLogOut extends View {
     @Override
     public void backToMainScene() {
         EmployeeView.window.close();
+        ActivityTracker.recordAllActivities();
         super.backToMainScene();
     }
 

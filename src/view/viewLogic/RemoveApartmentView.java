@@ -17,6 +17,7 @@ public class RemoveApartmentView extends View {
     }
 
     @FXML TextField txtApNumber;
+
     @FXML
     public void removeApartment() {
         controller.removeApartment(txtApNumber.getText());

@@ -2,20 +2,14 @@ package view.viewLogic;
 
 import business.Client;
 import business.Reservation;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.util.Callback;
 import model.DataManager;
 
-import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.List;
-import java.util.Optional;
 import java.util.ResourceBundle;
 
 /**
@@ -28,7 +22,7 @@ public class ReservationsTable implements Initializable {
     private static View view = new View();
 
     @FXML
-    private javafx.scene.control.TableView reservationsTable;
+    private javafx.scene.control.TableView<Reservation> reservationsTable;
     @FXML
     private TableColumn<Reservation, Integer> colReservationNumber;
     @FXML
@@ -54,7 +48,6 @@ public class ReservationsTable implements Initializable {
         );
         reservations = dataManager.retrieve(reservations, "reservations");
         try {
-            System.out.println(reservations.toString()); // here all seems alright all the fields are printed ok..
             reservationsTable.getItems().setAll(reservations);
 
         } catch (NullPointerException e) {
